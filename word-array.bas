@@ -1,0 +1,18 @@
+10 PRINT "Input Target Word: ";
+20 INPUT A$
+30 A=LEN(A$)
+40 PRINT "How many columns? ";
+50 INPUT CM
+60 PRINT "How many rows? ";
+70 INPUT RM
+80 REM PRINT CHR$(34);A$;CHR$(34);" is ";A;" characters."
+90 PRINT " "
+100 T=1
+110 FOR R=1 TO RM
+120 FOR C=1 TO CM
+130 PRINT MID$(A$,T,1);
+140 T=T+1
+150 IF T>A THEN T=1
+160 NEXT C
+170 PRINT " "
+180 NEXT R
